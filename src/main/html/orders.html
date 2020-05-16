@@ -7,13 +7,13 @@
 		<!-- Заголовок страницы в браузере -->
 		<title>MyRestaurant</title>
 		<!-- Подключаем CSS -->
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/orders.css" />
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
-	<div class="main_conteiner">
+	<div class="main_conteiner_orders">
 		<div class="head_conteiner">
 			<div class="menu_el1"><a href="dish.html"><p>dish</p></a></div>
 			<div class="menu_el2"><a href="tables.html"><p>table</p></a></div>
@@ -21,17 +21,30 @@
 			<div class="menu_el3"><a href="orders.html"><p>orders</p></a></div>
 			<div class="menu_el4"><a href="index.html"><p>kontakt</p></a></div>
 		</div>
-		<div class="body_conteiner">
-			<div class="tables12_colum">
-				<div class="el_table1"><img src="img/table.png" alt=""></div>
-				<div class="el_table2"><img src="img/table.png" alt=""></div>
-			</div>
-			<div class="tables3_colum">
-				<div class="el_table3"><img src="img/table.png" alt=""></div>
-			</div>
-			<div class="tables45_colum">
-				<div class="el_table4"><img src="img/table.png" alt=""></div>
-				<div class="el_table5"><img src="img/table.png" alt=""></div>
+		<div class="body_conteiner_orders">
+			<h1 class="h1_orders"><p>Order information</p></h1>
+			<div class="orders_container">
+				<div class="orders">
+					<span><textarea name="notice" 
+						rows="15" readonly></textarea></span>
+				</div>
+					<div class="control_block">
+						<div class="find_by_date">
+							<a href="#" class="find_by_date_bt"><span class="find_by_date_text">find by date</span></a>
+						</div>
+						<div class="find_by_number">
+		 						<a href="#" class="find_by_number_bt"><span class="find_by_number_text">find by number</span></a>
+						</div>
+						<div class="create_order">
+							<a href="#" class="create_order_bt"><span class="create_order_text">create order</span></a>
+						</div>
+						<div class="update_order">
+		 						<a href="#" class="update_order_bt"><span class="update_order_text">update order</span></a>
+						</div>
+						
+					</div>
+				
+				
 			</div>		
 		</div>
 		<footer class="footer_conteiner">
