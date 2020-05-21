@@ -154,10 +154,11 @@ body{
 	box-shadow: 0px 0px 40px rgba( 73, 115 ,255, 0.8);
 }
 .create_order_bt:hover,.update_order_bt:hover{
-transition: all 08s ease 0s;2
-	-webkit-box-shadow: 0px 0px 20px rgba(102, 255, 102, 1);
-	box-shadow: 0px 0px 40px rgba(102, 255, 102, 1);
+	transition: all 08s ease 0s;2
+	-webkit-box-shadow: 0px 0px 20px rgba(102, 255, 102, 0.8);
+	box-shadow: 0px 0px 40px rgba(102, 255, 102, 0.8);
 }
+.create_order_bt,.update_order_bt{}
 .find_by_date_text,.find_by_number_text,.create_order_text,.update_order_text{
 	color: #fff;
 	text-transform: uppercase;
