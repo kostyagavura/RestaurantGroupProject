@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -21,10 +22,15 @@ public class Order {
     @Id
     @GeneratedValue
     private Long id;
+    @GeneratedValue
     private int number;
     private Date date;
+    @OneToMany(mappedBy = "order")
+    private Dish dish;
     @ElementCollection
-    private List<NumberOfDishes> listNumDish;
-    private Table infTable;
+    private List<> listNumDish;
+    private NumberTable numTable;
+    private boolean isActive;
+
 
 }

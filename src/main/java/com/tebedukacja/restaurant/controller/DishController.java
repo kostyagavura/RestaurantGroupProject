@@ -24,7 +24,7 @@ public class DishController {
     }
 
     @PostMapping("/dishAdd")
-    public String createHotel(@RequestBody DishRequest dishRequest){
+    public String createDish(@RequestBody DishRequest dishRequest){
         return dishService.saveDish(dishRequest);
     }
 

@@ -15,39 +15,39 @@ public class RestaurantController {
     @Autowired
     RestaurantService restaurantService;
 
-    @GetMapping("/restaurants/{restaurantId}")
-    public RestaurantResponse getRestaurant(@PathVariable Long restaurantId) {
-        return restaurantService.findRestaurantById(restaurantId);
-    }
-
-    @GetMapping("/restaurants/name")
-    public RestaurantResponse findRestaurantByName(@RequestParam String name) {
-        return restaurantService.findRestaurantByName(name);
-    }
-
-    @GetMapping("/restaurants/filtered")
-    public Set<RestaurantResponse> findRestaurantByCity(@RequestParam String name, String city) {
-        return restaurantService.findRestaurantByNameOrByCity(name, city);
-    }
-
-    @DeleteMapping("/restaurants/{restaurantId}")
-    public void deleteRestaurant(@PathVariable Long restaurantId) {
-        restaurantService.deleteRestaurantById(restaurantId);
-    }
-
-    @GetMapping("/restaurants")
-    public Iterable<RestaurantResponse> getAllRestaurants() {
-        return restaurantService.findAllRestaurants();
-    }
-
-    @PostMapping("/restaurants")
-    public RestaurantResponse createRestaurant(@RequestBody RestaurantRequest restaurantRequest) {
-        return restaurantService.saveRestaurant(restaurantRequest);
-    }
-
-    @PutMapping("/restaurants")
-    public RestaurantResponse updateRestaurant(@RequestBody RestaurantRequest restaurantRequest) {
-
-        return restaurantService.saveRestaurant(restaurantRequest);
-    }
+//    @GetMapping("/restaurants/{restaurantId}")
+//    public RestaurantResponse getRestaurant(@PathVariable Long restaurantId) {
+//        return restaurantService.findRestaurantById(restaurantId);
+//    }
+//
+//    @GetMapping("/restaurants/name")
+//    public RestaurantResponse findRestaurantByName(@RequestParam String name) {
+//        return restaurantService.findRestaurantByName(name);
+//    }
+//
+//    @GetMapping("/restaurants/filtered")
+//    public Set<RestaurantResponse> findRestaurantByCity(@RequestParam String name, String city) {
+//        return restaurantService.findRestaurantByNameOrByCity(name, city);
+//    }
+//
+//    @DeleteMapping("/restaurants/{restaurantId}")
+//    public void deleteRestaurant(@PathVariable Long restaurantId) {
+//        restaurantService.deleteRestaurantById(restaurantId);
+//    }
+//
+//    @GetMapping("/restaurants")
+//    public Iterable<RestaurantResponse> getAllRestaurants() {
+//        return restaurantService.findAllRestaurants();
+//    }
+//
+//    @PostMapping("/restaurants")
+//    public RestaurantResponse createRestaurant(@RequestBody RestaurantRequest restaurantRequest) {
+//        return restaurantService.saveRestaurant(restaurantRequest);
+//    }
+//
+//    @PutMapping("/restaurants")
+//    public RestaurantResponse updateRestaurant(@RequestBody RestaurantRequest restaurantRequest) {
+//
+//        return restaurantService.saveRestaurant(restaurantRequest);
+//    }
 }

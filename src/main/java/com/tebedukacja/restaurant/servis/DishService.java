@@ -22,7 +22,7 @@ public class DishService {
     }
 
     public String  saveDish(DishRequest dishReq){
-        Dish dish = new Dish (0,dishReq.getName(),dishReq.getDetails(),dishReq.getPrice,false);
+        Dish dish = new Dish (0L,dishReq.getName(),dishReq.getDetails(),dishReq.getPrice(),dishReq.getDishType());
         dishRepository.save(dish);
         return " Dish added )";
     }
