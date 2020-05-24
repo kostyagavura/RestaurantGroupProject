@@ -25,10 +25,8 @@ public class Order {
     @GeneratedValue
     private int number;
     private Date date;
-    @OneToMany(mappedBy = "order")
-    private Dish dish;
     @ElementCollection
-    private List<> listNumDish;
+    private List<NumberOfDishes> listNumDish;
     private NumberTable numTable;
     private boolean isActive;
 

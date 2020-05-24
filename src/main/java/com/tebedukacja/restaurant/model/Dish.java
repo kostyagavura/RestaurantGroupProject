@@ -22,8 +22,7 @@ public class Dish {
     private String details;
     private double price;
     private DishType dishType;
-    @ManyToOne
-    private Order order;
+
 
 
 }
